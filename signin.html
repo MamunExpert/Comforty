@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- talwindcss link -->
+    <link href="./output.css" rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <title>Sign In - Comforty</title>
+</head>
+<body>
+
+    <!-- Header Navigation Section Start -->
+    <header class="max-w-screen-xl mx-auto bg-cool">
+
+        <!-- Top part -->
+        <div class="md:text-xs text-[9px] bg-dark-hot text-cool-300  sm:px-16 md:px-32 py-1.5 hidden sm:flex  items-center justify-between ">
+
+            <div class="hover:text-cool">
+                    <p class="">✓ Free Shipping All Order Over $50</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+                    <p class="hover:text-cool">Eng ˅</p>
+                    <p class="hover:text-cool">Faqs</p>
+                    <p class="hover:text-cool">ⓘ Need Help</p>
+            </div>
+        </div>
+
+        <!-- Middle part -->
+        <div class="py-2 px-3 sm:px-16 md:px-32 h-12 sm:h-14 bg-cool grid grid-cols-3 justify-between items-center gap-2">
+
+            <div class="logos flex justify-start items-center gap-1 md:gap-2 cursor-pointer" id="comfortyLink">
+                <i class="fa-solid fa-couch text-hot text-xl md:text-2xl  "></i>
+                <h2 class="text-dark-hot hover:text-hot-300 text-xl md:text-2xl font-bold ">Comforty</h2>
+            </div>
+
+            <div class="search-box w-full bg-white rounded flex items-center">
+                <input type="text" name="search" id="search" placeholder="Search here..." class="block outline-none pl-2 md:pl-4 py-1 w-[85%] h-8 placeholder-gray-300 border-none text-xs md:text-sm focus:text-dark-hot rounded">
+                <div class="flex justify-start items-center md:px-2 w-[15%]">
+                    <i class="fa-solid fa-magnifying-glass text-xs md:text-sm cursor-pointer hover:text-hot"></i>
+                </div>
+            </div>
+
+            <div class="user-profile flex justify-end items-center gap-2 md:gap-3 cursor-pointer">
+
+                <div class="cart text-xs px-2 h-8 bg-white rounded invisible md:visible flex justify-between items-center gap-2">
+                    <a href="./signin.html"><i class="fa-solid fa-cart-shopping hover:text-hot"></i></a>
+                    <a href="./signin.html"><p class="hidden md:inline-block">Cart</p></a>
+                    <span class="hidden md:flex h-[14px] md:h-4 w-[14px] md:w-4 bg-hot text-white rounded-full justify-center items-center">2</span>
+                </div>
+
+                <div class="favorite h-8 w-8 flex justify-center items-center bg-white hover:text-white hover:bg-hot text-xs rounded-lg">
+                    <a href="./signin.html"><i class="fa-regular fa-heart"></i></a>
+                </div>
+
+                <div class="profile h-8 w-8 flex justify-center items-center bg-white hover:text-white hover:bg-hot text-xs rounded-lg">
+                    <a href="./signin.html"><i class="fa-regular fa-user"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom part -->
+         <div class="px-3 sm:px-16 md:px-32 h-14 bg-white flex justify-between items-center text-[10px] md:text-sm">
+
+            <div class="flex justify-between items-center text-dark-hot gap-5">
+                <div class="flex items-center gap-2 border-solid border border-cool hover:border-cool-300 py-1 px-3 rounded cursor-pointer">
+                    <i class="fa-solid fa-bars text-[14px] hover:text-hot-300"></i>
+                    <p class="hover:text-hot-300 text-[14px]">All Categories</p>
+                </div>
+                <div class="hidden sm:block" id="nav-list">
+                    <ul class="flex items-center gap-2 md:gap-4 text-dark-hot">
+                        <li class="text-hot-300"><a href="#">Home</a></li>
+                        <li class="hover:text-hot-300"><a href="#shop">Shop</a></li>
+                        <li class="hover:text-hot-300"><a href="#latest">Product</a></li>
+                        <li class="hover:text-hot-300"><a href="#top">Pages</a></li>
+                        <li class="hover:text-hot-300"><a href="#review">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-dark-hot"><span class="text-cool-500">Contact:</span> (808) 555-0111</p>
+            </div>
+
+         </div>
+
+    </header>
+
+    <!-- Breadcrumb navigation start -->
+    <div class="max-w-screen-xl mx-auto px-3 sm:px-16 md:px-32">
+
+            <!-- Only for mobile screens -->
+        <div class="py-4 px-3 sm:px-16 md:px-32 bg-cool rounded-b-2xl visible sm:hidden">
+            <nav class="text-gray-600 text-md">
+                <ul class="flex space-x-2 font-semibold">
+                    <li><a href="#" class="hover:underline text-[#636270] hover:text-dark-hot">Home</a></li>
+                  <li>></li>
+                  <li><a href="#" class="hover:underline text-[#636270] hover:text-dark-hot">Account</a></li>
+                  <li>></li>
+                  <li class="text-dark-hot font-bold">Sign In</li>
+            </nav>
+        </div>
+
+                <!-- Only for larger view -->
+        <div class="py-4 px-3 sm:px-16 md:px-32 bg-cool rounded-b-2xl hidden sm:block">
+            <nav class="text-gray-600 text-md">
+           <ul class="flex space-x-2 font-semibold">
+                    <li><a href="#" class="hover:underline text-[#636270] hover:text-dark-hot">Home</a></li>
+                    <li>></li>
+                    <li><a href="#" class="hover:underline text-[#636270] hover:text-dark-hot">Account</a></li>
+                    <li>></li>
+                    <li class="text-dark-hot font-bold">Sign In</li>
+                </ul>
+                <h2 class="text-dark-hot font-bold text-2xl mt-1">Sign In</h2>
+            </nav>
+        </div>
+
+    </div>
+
+          <!-- Sign In Form start -->
+    <div class="px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white">
+
+        <div class="flex items-center justify-center bg-white my-12">
+            <div class="bg-white shadow-lg rounded-lg py-5 px-8 max-w-lg w-full">
+                <h2 class="text-3xl font-bold mb-6 text-center">Sign In</h2>
+                
+                <form id="sign-in-form" class="space-y-4">
+                  
+                      <div>
+                          <input type="email" id="email" placeholder="Email" class="w-full p-2 outline-none bg-cool rounded-md focus:ring focus:ring-hot" required>
+                      </div>
+                  
+                      <div class="relative">
+                          <input type="password" id="password" placeholder="Password" class="w-full p-2 outline-none bg-cool rounded-md focus:ring focus:ring-hot" required>
+                          <span id="toggle-password" class="absolute right-3 top-2 cursor-pointer">
+                          <i class="fas fa-eye"></i> </span>
+                      </div>
+                  
+                      <!-- Error Message -->
+                      <p id="error-message" class="text-red-500 text-sm hidden">Invalid email or password.</p>
+    
+                      <div class="flex items-center justify-between">
+                          <label class="flex items-center">
+                              <input type="checkbox" class="form-checkbox">
+                              <span class="ml-2 text-cool-500 text-sm">Remember Me</span>
+                          </label>
+                          <a href="#" class="text-sm text-green-500 hover:underline">Forgot Password?</a>
+                      </div>
+                  
+                      <button type="submit" class="w-full bg-hot text-white p-2 rounded-md hover:bg-hot-300 focus:ring focus:ring-green-300">
+                          Sign In <i class="fas fa-arrow-right"></i>
+                      </button>
+                  </form>
+              
+                <p class="mt-4 text-center">Don't have an account? 
+                <a href="#" class="text-hot-300 text-sm hover:underline">Sign Up</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+        <!-- Footer section start -->
+    <div class="max-w-screen-xl mx-auto bg-white border-y-2 border-solid border-gray-300" id="about">
+        <footer class="pb-2 pt-8 sm:p-12 px-3 sm:px-16 md:px-32">
+
+            <div class="flex-row sm:flex items-center sm:items-start text-center md:text-left space-x-4 space-y-4 sm:space-y-0">
+              
+              <div class="footer-box-1 flex flex-col items-center md:items-start ">
+                  <div class="flex items-center mb-2">
+                    <p class="text-dark-hot font-bold text-2xl cursor-pointer">
+                    <i class="fa-solid fa-couch text-hot"></i>
+                    <span>Comforty</span></p>
+                  </div>
+                
+                  <p class="text-lg sm:text-sm text-dark-hot text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Harum atque earum quos in.</p>
+                
+                  <div class="socials my-2">
+                    <div class="flex space-x-1 text-lg text-cool-500 leading-7 text-center">
+                      <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out">
+                        <i class="fa-brands fa-facebook"></i></a>
+      
+                      <a href="#" class="w-8 h-8 rounded-full text-center text-cool-500 leading-7 border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-instagram"></i></a>
+      
+                      <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-twitter"></i></a>
+      
+                      <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-pinterest"></i></a>
+      
+                      <a href="#" class="w-8 h-8 border-2 rounded-full border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-youtube"></i></a>
+                    </us=>
+                  </div>
+      
+                  </div>
+              </div>
+      
+              <div class="footer-box-2">
+                <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Category</h2>
+                <ul class="text-dark-hot text-sm space-y-1">
+                  <li><a href="#" class="hover:text-hot">Sofa</a></li>
+                  <li><a href="#" class="hover:text-hot">Armchair</a></li>
+                  <li><a href="#" class="hover:text-hot">Wing Chair</a></li>
+                  <li><a href="#" class="hover:text-hot">Desk Chair</a></li>
+                  <li><a href="#" class="hover:text-hot">wooden Chair</a></li>
+                  <li><a href="#" class="hover:text-hot">Park Bench</a></li>
+                </ul>
+              </div>
+      
+              <div class="footer-box-3">
+                <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Support</h2>
+                <ul class="text-dark-hot text-sm leading-6">
+                  <li><a href="#" class="hover:text-hot" href="#">Help & Support</a></li>
+                  <li><a href="#" class="hover:text-hot" href="#">Tearms & Conditions</a></li>
+                  <li><a href="#" class="hover:text-hot" href="#">Privacy Policy</a></li>
+                  <li><a href="#" class="hover:text-hot" href="#">Help</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-box-4">
+                    <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Newsletter</h2>
+      
+                <div class="text-dark-hot text-sm">
+      
+                  <div class="subscribe my-2 flex flex-col md:flex-row items-center">
+                    <input type="email" placeholder="Your email"
+                        class="p-2 w-full md:w-auto mb-2 md:mb-0 md:mr-1 border-2 border-cool text-hot rounded-md transition duration-300 outline-none focus:ring-1 focus:ring-hot"/>
+      
+                    <input type="submit" value="Subscribe"
+                        class="p-[9px] w-full md:w-auto rounded-md font-bold text-sm capitalize bg-hot text-white hover:bg-dark-hot focus:ring focus:ring-hot transition duration-300"/>
+                </div>
+      
+                  <div class="info my-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam tincidunt erat enim.</p>
+                  </div>
+      
+                </div> 
+              </div>
+              
+            </div>
+      
+            
+          </footer>
+    </div>
+
+    <!-- copyright text  -->
+    <div class="py-4 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white ">
+      <div class="flex flex-col sm:flex-row sm:justify-between items-center">
+          <div>
+            <p class="text-gray-400 text-sm">@ 2024 - Comforty - Designed & Develop by <span class="text-dark-hot">MamunExpert</span></p>
+          </div>
+          <div>
+            <a href="#">
+              <img class="inline-block w-40" src="./assets/pay-method.jpg" alt="">
+            </a>
+          </div>
+      </div>
+    </div>
+
+
+        <!-- javascript link -->
+    <script src="./script.js"></script>
+</body>
+</html>
