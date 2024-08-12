@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comforty - Online Shoping</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style.css link -->
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body class="bg-cool-500 shadow-2xl">
+
+    <!-- Header Navigation Section Start -->
+    <header class="max-w-screen-xl mx-auto bg-cool">
+
+        <!-- Top part -->
+        <div class="md:text-xs text-[9px] bg-dark-hot text-cool-300  sm:px-16 md:px-32 py-1.5 hidden sm:flex  items-center justify-between ">
+
+            <div class="hover:text-cool">
+                    <p class="">✓ Free Shipping All Order Over $50</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+                    <p class="hover:text-cool">Eng ˅</p>
+                    <p class="hover:text-cool">Faqs</p>
+                    <p class="hover:text-cool">ⓘ Need Help</p>
+            </div>
+        </div>
+
+        <!-- Middle part -->
+        <div class="py-2 px-3 sm:px-16 md:px-32 h-12 sm:h-14 bg-cool grid grid-cols-3 justify-between items-center gap-2">
+
+            <div class="logos flex justify-start items-center gap-1 md:gap-2 cursor-pointer">
+                <i class="fa-solid fa-couch text-hot text-xl md:text-2xl "></i>
+                <h2 class="text-dark-hot hover:text-hot-300 text-xl md:text-2xl font-bold">Comforty</h2>
+            </div>
+
+            <div class="search-box w-full bg-white rounded flex items-center">
+                <input type="text" name="search" id="search" placeholder="Search here..." class="block outline-none pl-2 md:pl-4 py-1 w-[85%] h-8 placeholder-gray-300 border-none text-xs md:text-sm focus:text-dark-hot rounded">
+                <div class="flex justify-start items-center md:px-2 w-[15%]">
+                    <i class="fa-solid fa-magnifying-glass text-xs md:text-sm cursor-pointer hover:text-hot"></i>
+                </div>
+            </div>
+
+            <div class="user-profile flex justify-end items-center gap-2 md:gap-3 cursor-pointer">
+
+                <div class="cart text-xs px-2 h-8 bg-white rounded flex justify-between items-center gap-2">
+                    <a href="./signin.html"><i class="fa-solid fa-cart-shopping hover:text-hot"></i></a>
+                    <a href="./signin.html"><p class="hidden md:inline-block">Cart</p></a>
+                    <a href="./signin.html"></a><span class="hidden md:flex h-[14px] md:h-4 w-[14px] md:w-4 bg-hot text-white rounded-full justify-center items-center">2</span></a>
+                </div>
+
+                <div class="favorite h-8 w-8 flex justify-center items-center bg-white hover:text-white hover:bg-hot text-xs rounded-lg">
+                    <a href="./signin.html"><i class="fa-regular fa-heart"></i></a>
+                </div>
+
+                <div class="profile h-8 w-8 flex justify-center items-center bg-white hover:text-white hover:bg-hot text-xs rounded-lg">
+                    <a href="./signin.html"><i class="fa-regular fa-user"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom part -->
+         <div class="px-3 sm:px-16 md:px-32 h-8 md:h-11 bg-white flex justify-between items-center text-[10px] md:text-sm">
+
+            <div class="flex justify-between items-center text-dark-hot gap-5">
+                <div class="flex items-center gap-2 border-solid border border-cool hover:border-cool-300 py-1 px-3 rounded cursor-pointer">
+                    <i class="fa-solid fa-bars text-[14px] hover:text-hot-300"></i>
+                    <p class="hover:text-hot-300 text-[14px]">All Categories</p>
+                </div>
+                <div class="hidden sm:block" id="nav-list">
+                    <ul class="flex items-center gap-2 md:gap-4 text-dark-hot">
+                        <li class="text-hot-300"><a href="#">Home</a></li>
+                        <li class="hover:text-hot-300"><a href="#shop">Shop</a></li>
+                        <li class="hover:text-hot-300"><a href="#latest">Product</a></li>
+                        <li class="hover:text-hot-300"><a href="#top">Pages</a></li>
+                        <li class="hover:text-hot-300"><a href="#review">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-dark-hot"><span class="text-cool-500">Contact:</span> (808) 555-0111</p>
+            </div>
+
+         </div>
+
+         <!-- Hero Section Start -->
+         <div class="px-2 sm:px-16 md:px-32 grid grid-cols-1 md:grid-cols-2 items-center justify-between py-8">
+
+            <div class="hero-content-box order-2 sm:order-1 flex flex-col items-center sm:items-start ">
+                <div class="information-box text-dark-hot text-center sm:text-left">
+                    <p class="text-md sm:text-sm font-normal ">Welcome to chairy</p>
+                    <p class="text-5xl lg:text-6xl font-bold">Best Furniture <br>Collection For <br>Your Interior.</p>
+                </div>
+                <div class="mt-5 sm:mt-7">
+                    <a href="#">
+                        <button class="bg-hot hover:bg-dark-hot text-white font-bold py-3 px-5 rounded">Shop Now
+                            <i class="fa-solid fa-arrow-right block ml-2"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image-box order-1 sm:order-2 pt-2 relative">
+                <img class="absolute right-[25%] top-[35%] w-[25%]" src="./assets/50-percent-.png">
+                <div class="hero-image flex justify-center items-center h-[50%]">
+                    <img class="h-[300px] sm:h-[400px]" src="./assets/Product Image.png">
+                </div>
+            </div>
+         </div>
+         
+
+    </header>
+
+  
+        <!-- Feature section start -->
+    <div class="py-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-cool-300">
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 justify-between items-center py-2 px-2 sm:py-10 sm:px-16 bg-white shadow-lg rounded-lg gap-4">
+
+            <div class="feature-box-1 flex justify-center items-center">
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="./assets/box.png">
+                </div>
+                <div class="details">
+                    <p class="font-bold">Discount</p>
+                    <p class="text-[12px] text-cool-500">Every week new sales</p>
+                </div>
+            </div>
+
+            <div class="feature-box-2 flex justify-center items-center">
+
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="./assets/delivery-truck.png">
+                </div>
+
+                <div class="details">
+                    <p class="font-bold">Free Delivery</p>
+                    <p class="text-[12px] text-cool-500">100% Free for all orders</p>
+                </div>
+
+            </div>
+
+            <div class="feature-box-3 flex justify-center items-center">
+
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="./assets/24-hours.png">                </div>
+                
+                <div class="details">
+                    <p class="font-bold">Great Support 24/7</p>
+                    <p class="text-[12px] text-cool-500">We care your experiences</p>
+                </div>
+
+            </div>
+
+            <div class="feature-box-4 flex justify-center items-center">
+
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="./assets/shield.png">
+                </div>
+
+                <div class="details">
+                    <p class="font-bold">Great Support 24/7</p>
+                    <p class="text-[12px] text-cool-500">We care your experiences</p>
+                </div>
+
+            </div>
+
+       </div>
+    </div>
+
+
+        <!-- Company section start -->
+     <div class="pb-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white">
+
+        <ul class="flex flex-wrap items-center justify-center sm:justify-between space-x-1 cursor-pointer">
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="./assets/Logo.png">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="./assets/Logo (1).png" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="./assets/Logo (2).png" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="./assets/Logo (3).png" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700" src="./assets/Logo (4).png" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700" src="./assets/Logo (5).png" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700" src="./assets/Logo (6).png" alt="">
+            </li>
+        </ul>
+
+     </div>
+
+
+        <!-- Featured product section start -->
+     <div class="pb-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white" id="featured">
+        
+        <div class="heading flex justify-between items-center mb-7">
+                <div>
+                    <h2 class="text-dark-hot text-3xl font-bold">Featured Products</h2>
+                </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+      
+      <div class="grid grid-cols-2 justify-between items-center sm:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-2 gap-y-3 md:gap-y-4 ">
+        
+        <!--       product 1 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>New</p>
+          </div>
+          
+          <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    <!--       product 2 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>Sales</p>
+          </div>
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (1).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 3 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (2).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 4 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (3).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+       </div>
+     </div>
+      
+
+        <!-- Top categories section start -->
+     <div class="py-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white" id="top">
+    
+        <div class="heading flex justify-between items-center mb-7">
+            <div>
+                <h2 class="text-dark-hot text-3xl font-bold">Top Categories</h2>
+            </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+        
+        <div class="grid grid-cols-1 items-centers md:grid-cols-3 gap-3 md:gap-4">
+        
+    <!--       product 1 -->
+        <div class="products-box hover:shadow-xl rounded overflow-hidden">
+            <div class="relative cursor-pointer">
+                <div>
+                    <img src="./assets/Image (4).png" class="hover:scale-110" alt="Wing Chair">
+                </div>
+                
+                <div class="info-box absolute bottom-0 bg-black bg-opacity-50 w-full py-2 px-4 ">
+                <h2 class="text-lg text-white font-bold">Wing Chair</h2>
+                <p class="font-normal text-sm text-gray-200">3,584 Products</p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    <!--       product 2 -->
+        <div class="products-box hover:shadow-xl rounded overflow-hidden">
+            <div class="relative cursor-pointer">
+                <div>
+                    <img src="./assets/Image (5).png" class="hover:scale-110" alt="Wooden Chair">
+                </div>
+                
+                <div class="info-box absolute bottom-0 bg-black bg-opacity-50 w-full py-2 px-4 ">
+                <h2 class="text-lg text-white font-bold">Wooden Chair</h2>
+                <p class="font-normal text-sm text-gray-200">157 Products</p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    <!--      product 3 -->
+        <div class="products-box hover:shadow-xl rounded overflow-hidden">
+            <div class="relative cursor-pointer">
+                <div>
+                    <img src="./assets/Image (6).png" class="hover:scale-110" alt="">
+                </div>
+                
+                <div class="info-box absolute bottom-0 bg-black bg-opacity-50 w-full py-2 px-4 ">
+                    <h2 class="text-lg text-white font-bold">Desk Chair</h2>
+                    <p class="font-normal text-sm text-gray-200">210 Products</p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+        </div>
+    
+     </div>
+
+
+        <!-- Our Products section start  -->
+    <div class="py-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white" id="shop">
+      
+        <div class="heading flex flex-col justify-center items-center mb-7">
+            <h2 class="text-dark-hot text-3xl font-bold mb-2">Our Products</h2>
+            
+            <ul class="flex justify-center flex-wrap items-center space-y-3 space-x-2 uppercase">
+                <li class="text-dark-hot underline font-medium"><a href="#">All</a></li>
+                <li class="text-gray-400 hover:text-dark-hot hover:font-medium hover:underline"><a href="#">Newest</a></li>
+                <li class="text-dark-hot font-medium hover:text-dark-hot hover:font-medium hover:underline"><a href="#top">Trending</a></li>
+                <li class="text-gray-400 hover:text-dark-hot hover:font-medium hover:underline"><a href="#top">Best Sellers</a></li>
+                <li class="text-gray-400 hover:text-dark-hot hover:font-medium hover:underline"><a href="#featured">Featured</a></li>
+            </ul>
+        </div>
+
+        <div class="grid grid-cols-2 justify-between items-center sm:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-2 gap-y-3 md:gap-y-4">
+        
+            <!--       product 1 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative">
+              
+              <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+                <p>New</p>
+              </div>
+              
+              <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image.png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20</p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+        <!--       product 2 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+              
+              <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+                <p>Sales</p>
+              </div>
+              
+              <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image (1).png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+            <!--       product 3 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+              
+              <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image (2).png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20</p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+            <!--       product 4 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+              
+              <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image (3).png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20</p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+
+
+         <!--       product 5 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative">
+              
+            <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+              <p>New</p>
+            </div>
+            
+            <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image (4).png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20</p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+      <!--       product 6 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+            
+            <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+              <p>Sales</p>
+            </div>
+            
+            <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image (7).png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+          <!--       product 7 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+            
+            <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image (8).png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20</p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+          <!--       product 8 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+            
+            <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image.png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20</p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+         </div>
+
+    </div>
+
+
+        <!-- Client review section start -->
+    <div class="p-12 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-cool-300" id="review">
+    
+        <div class="heading flex justify-between items-center mb-7">
+            <div>
+                <h2 class="text-dark-hot text-3xl font-bold">What client says about us</h2>
+            </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+        
+        <div class="grid grid-cols-1 items-centers lg:grid-cols-2 gap-3 md:gap-4">
+        
+            <div class="review-box p-6 bg-white rounded-lg">
+                <p class="text-cool-500 font-normal border-l-2 border-hot pl-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+
+                <div class="clients-info mt-6 ">
+                    <div class="flex justify-start items-center gap-2 relative">
+                            <img src="./assets/Image (10).png" class="w-12">
+                        <div>
+                            <p class="font-bold text-md">Kristin Watson</p>
+                            <p class="font-normal text-sm text-cool-500">Fashion Designer</p>
+                        </div>
+                        <img src="./assets/double_quotes_r 1.png" class="w-32 absolute right-[-5%] bottom-[-50%]">
+                    </div>
+                </div>
+            </div>
+            <div class="review-box p-6 bg-white rounded-lg">
+                <p class="text-cool-500 font-normal border-l-2 border-hot pl-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et”</p>
+
+                    <div class="clients-info mt-6 ">
+                        <div class="flex justify-start items-center gap-2 relative">
+                                <img src="./assets/Image (11).png" class="w-12">
+                            <div>
+                                <p class="font-bold text-md">Esther Howard</p>
+                            <p class="font-normal text-sm text-cool-500">Fashion Designer</p>
+                            </div>
+                            <img src="./assets/double_quotes_r 1.png" class="w-32 absolute right-[-5%] bottom-[-50%]">
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+    
+    </div>
+
+
+        <!-- Recently Added section start -->
+     <div class="p-12 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white sm:pb-20 border-b-2 border-solid border-gray-300" id="latest">
+        
+        <div class="heading flex justify-between items-center mb-7">
+                <div>
+                    <h2 class="text-dark-hot text-3xl font-bold">Recently Added</h2>
+                </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+      
+      <div class="grid grid-cols-2 justify-between items-center sm:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-2 gap-y-3 md:gap-y-4 ">
+        
+        <!--       product 1 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>New</p>
+          </div>
+          
+          <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (3).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    <!--       product 2 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>Sales</p>
+          </div>
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (7).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 3 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (1).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 4 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image (6).png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+       </div>
+     </div>
+
+
+        <!-- Footer section start -->
+    <footer class="pb-2 pt-8 sm:p-12 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white border-b-2 border-solid border-gray-300 " id="about">
+
+      <div class="flex-row sm:flex items-center sm:items-start text-center md:text-left space-x-4 space-y-4 sm:space-y-0">
+        
+        <div class="footer-box-1 flex flex-col items-center md:items-start ">
+            <div class="flex items-center mb-2">
+              <p class="text-dark-hot font-bold text-2xl cursor-pointer">
+              <i class="fa-solid fa-couch text-hot"></i>
+              <span>Comforty</span></p>
+            </div>
+          
+            <p class="text-lg sm:text-sm text-dark-hot text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Harum atque earum quos in.</p>
+          
+            <div class="socials my-2">
+              <div class="flex space-x-1 text-lg text-cool-500 leading-7 text-center">
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out">
+                  <i class="fa-brands fa-facebook"></i></a>
+
+                <a href="#" class="w-8 h-8 rounded-full text-center text-cool-500 leading-7 border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-twitter"></i></a>
+
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-pinterest"></i></a>
+
+                <a href="#" class="w-8 h-8 border-2 rounded-full border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-youtube"></i></a>
+              </us=>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="footer-box-2">
+          <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Category</h2>
+          <ul class="text-dark-hot text-sm space-y-1">
+            <li><a href="#" class="hover:text-hot">Sofa</a></li>
+            <li><a href="#" class="hover:text-hot">Armchair</a></li>
+            <li><a href="#" class="hover:text-hot">Wing Chair</a></li>
+            <li><a href="#" class="hover:text-hot">Desk Chair</a></li>
+            <li><a href="#" class="hover:text-hot">wooden Chair</a></li>
+            <li><a href="#" class="hover:text-hot">Park Bench</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box-3">
+          <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Support</h2>
+          <ul class="text-dark-hot text-sm leading-6">
+            <li><a href="#" class="hover:text-hot" href="#">Help & Support</a></li>
+            <li><a href="#" class="hover:text-hot" href="#">Tearms & Conditions</a></li>
+            <li><a href="#" class="hover:text-hot" href="#">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-hot" href="#">Help</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-box-4">
+              <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Newsletter</h2>
+
+          <div class="text-dark-hot text-sm">
+
+            <div class="subscribe my-2 flex flex-col md:flex-row items-center">
+              <input type="email" placeholder="Your email"
+                  class="p-2 w-full md:w-auto mb-2 md:mb-0 md:mr-1 border-2 border-cool text-hot rounded-md transition duration-300 outline-none focus:ring-1 focus:ring-hot"/>
+
+              <input type="submit" value="Subscribe"
+                  class="p-[9px] w-full md:w-auto rounded-md font-bold text-sm capitalize bg-hot text-white hover:bg-dark-hot focus:ring focus:ring-hot transition duration-300"/>
+          </div>
+
+            <div class="info my-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam tincidunt erat enim.</p>
+            </div>
+
+          </div> 
+        </div>
+        
+      </div>
+
+      
+    </footer>
+
+    <!-- copyright text  -->
+    <div class="py-4 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white ">
+      <div class="flex flex-col sm:flex-row sm:justify-between items-center">
+          <div>
+            <p class="text-gray-400 text-sm">@ 2024 - Comforty - Designed & Develop by <span class="text-dark-hot">MamunExpert</span></p>
+          </div>
+          <div>
+            <a href="#">
+              <img class="inline-block w-40" src="./assets/pay-method.jpg" alt="">
+            </a>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

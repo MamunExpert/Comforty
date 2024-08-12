@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comforty - Online Shoping</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style.css link -->
+
+    
+  <link rel="stylesheet" crossorigin href="./assets/index-DWSwvDHt.css">
+</head>
+<body class="bg-cool-500 shadow-2xl">
+
+    <!-- Header Navigation Section Start -->
+    <header class="max-w-screen-xl mx-auto bg-cool">
+
+        <!-- Top part -->
+        <div class="md:text-xs text-[9px] bg-dark-hot text-cool-300  sm:px-16 md:px-32 py-1.5 hidden sm:flex  items-center justify-between ">
+
+            <div class="hover:text-cool">
+                    <p class="">✓ Free Shipping All Order Over $50</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+                    <p class="hover:text-cool">Eng ˅</p>
+                    <p class="hover:text-cool">Faqs</p>
+                    <p class="hover:text-cool">ⓘ Need Help</p>
+            </div>
+        </div>
+
+        <!-- Middle part -->
+        <div class="py-2 px-3 sm:px-16 md:px-32 h-12 sm:h-14 bg-cool grid grid-cols-3 justify-between items-center gap-2">
+
+            <div class="logos flex justify-start items-center gap-1 md:gap-2 cursor-pointer">
+                <i class="fa-solid fa-couch text-hot text-xl md:text-2xl "></i>
+                <h2 class="text-dark-hot hover:text-hot-300 text-xl md:text-2xl font-bold">Comforty</h2>
+            </div>
+
+            <div class="search-box w-full bg-white rounded flex items-center">
+                <input type="text" name="search" id="search" placeholder="Search here..." class="block outline-none pl-2 md:pl-4 py-1 w-[85%] h-8 placeholder-gray-300 border-none text-xs md:text-sm focus:text-dark-hot rounded">
+                <div class="flex justify-start items-center md:px-2 w-[15%]">
+                    <i class="fa-solid fa-magnifying-glass text-xs md:text-sm cursor-pointer hover:text-hot"></i>
+                </div>
+            </div>
+
+            <div class="user-profile flex justify-end items-center gap-2 md:gap-3 cursor-pointer">
+
+                <div class="cart text-xs px-2 h-8 bg-white rounded flex justify-between items-center gap-2">
+                    <a href="./signin.html"><i class="fa-solid fa-cart-shopping hover:text-hot"></i></a>
+                    <a href="./signin.html"><p class="hidden md:inline-block">Cart</p></a>
+                    <a href="./signin.html"></a><span class="hidden md:flex h-[14px] md:h-4 w-[14px] md:w-4 bg-hot text-white rounded-full justify-center items-center">2</span></a>
+                </div>
+
+                <div class="favorite h-8 w-8 flex justify-center items-center bg-white hover:text-white hover:bg-hot text-xs rounded-lg">
+                    <a href="./signin.html"><i class="fa-regular fa-heart"></i></a>
+                </div>
+
+                <div class="profile h-8 w-8 flex justify-center items-center bg-white hover:text-white hover:bg-hot text-xs rounded-lg">
+                    <a href="./signin.html"><i class="fa-regular fa-user"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom part -->
+         <div class="px-3 sm:px-16 md:px-32 h-8 md:h-11 bg-white flex justify-between items-center text-[10px] md:text-sm">
+
+            <div class="flex justify-between items-center text-dark-hot gap-5">
+                <div class="flex items-center gap-2 border-solid border border-cool hover:border-cool-300 py-1 px-3 rounded cursor-pointer">
+                    <i class="fa-solid fa-bars text-[14px] hover:text-hot-300"></i>
+                    <p class="hover:text-hot-300 text-[14px]">All Categories</p>
+                </div>
+                <div class="hidden sm:block" id="nav-list">
+                    <ul class="flex items-center gap-2 md:gap-4 text-dark-hot">
+                        <li class="text-hot-300"><a href="#">Home</a></li>
+                        <li class="hover:text-hot-300"><a href="#shop">Shop</a></li>
+                        <li class="hover:text-hot-300"><a href="#latest">Product</a></li>
+                        <li class="hover:text-hot-300"><a href="#top">Pages</a></li>
+                        <li class="hover:text-hot-300"><a href="#review">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-dark-hot"><span class="text-cool-500">Contact:</span> (808) 555-0111</p>
+            </div>
+
+         </div>
+
+         <!-- Hero Section Start -->
+         <div class="px-2 sm:px-16 md:px-32 grid grid-cols-1 md:grid-cols-2 items-center justify-between py-8">
+
+            <div class="hero-content-box order-2 sm:order-1 flex flex-col items-center sm:items-start ">
+                <div class="information-box text-dark-hot text-center sm:text-left">
+                    <p class="text-md sm:text-sm font-normal ">Welcome to chairy</p>
+                    <p class="text-5xl lg:text-6xl font-bold">Best Furniture <br>Collection For <br>Your Interior.</p>
+                </div>
+                <div class="mt-5 sm:mt-7">
+                    <a href="#">
+                        <button class="bg-hot hover:bg-dark-hot text-white font-bold py-3 px-5 rounded">Shop Now
+                            <i class="fa-solid fa-arrow-right block ml-2"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image-box order-1 sm:order-2 pt-2 relative">
+                <img class="absolute right-[25%] top-[35%] w-[25%]" src="./assets/50-percent--BXrPlsWf.png">
+                <div class="hero-image flex justify-center items-center h-[50%]">
+                    <img class="h-[300px] sm:h-[400px]" src="./assets/Product%20Image-C3jhM3wq.png">
+                </div>
+            </div>
+         </div>
+         
+
+    </header>
+
+  
+        <!-- Feature section start -->
+    <div class="py-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-cool-300">
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 justify-between items-center py-2 px-2 sm:py-10 sm:px-16 bg-white shadow-lg rounded-lg gap-4">
+
+            <div class="feature-box-1 flex justify-center items-center">
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAR1SURBVHgBzZpddtpGFMfvjNw2Lz2h9OQ5YKc2b/UOKtt9L11BYAUhKzBeQcwKAiuo815jeQfOG7jBkPc0wW/JiTWT/xUIw0hCH4iY/zkGfYyG371zdXVnZEFrUGXnsKZJPMdmSZE++W/QbVPOEpSjPGAtjtFrCbsOOn+vidiAUd4GrAxeKtmFH6V8IYRoYLcA0LZ03ZPeyBnx+UrJLpFlNfM2IDP4IjCwtOgI5Z76wKbyNiA1eACYRCENiGmA1rotlepEGbwyuAkshGx9vrs7fYTwyOJJNkBbVoO0/gudUVoDYsHNGMb3CQOPRs7YBMlqAG1t1bRSz2FAybxHUoN7HpFbL0jo2jQkHHxU46DCDLBc5cSBsIMeWbKqNR0nMUBE/PAxLqwBeOyHBHs4TXyuEsuTtLrcgBn4s5JtWwDGpg1geIqWejVpfBqhwGPnJAmFOAPErAGJ19gcY2hfJk1TaeIzayzf89ErzmDgqzOfxSeKv5SrcMY+nxAk9ovF8u3HT8OruA4/jEfjDx9vnJ8fP+38IEUf7qyRlM1fi9ulJ4+fvuXzZtv/Pw1bT4rl98vaBqG5fBAV74Cmt+jDkfdNxJVw3TKG4FLC+3s7R8PfcBElEMd/D17o33Rxva4LrW2E0nB35+i152lDSdoy8N720dCPBGSzA3w7M1r+2N0+bOLEH/3B+YF3UQ5PuSQ3WFhb7J6Rd58Fywc48wL30+X1Tbcpwzrihr3BeS1sBMI8GNpHihH47KozhpzuImxFi3/7enBeX5oOTY8HPJLDY9rwquPCk3dEV0b5wPeVDY7Q50usx00tjIBAMYUcDw9eRHkwtI/pCADvb95H6r34CaOApNBgD39xFY9OhxIqEfiCAe/+bQqlDjwDYkLAFD8dEbNXPLIapQMOFRiY+zRLiDhtUQZNQ6TJfxwCGOVjV1q32G+EtZ8vH+DxSxyqSq1GyBiUFngl8Hn1Jtmm7e9X4H08dYmzgXdgVj6okV8+UA5aGdwUoN8ghF4hhGqTI175UM973pk7OFIY5+EzZIB/8C36g26V1qDcwX2hJrklKXSqa4T8HRVborZrA0+qhYmK1jwNbCW57sHBOZdPJtu0dLJt6sHAFYmxmE1U3NPvksfzkH8TU0YFnpyVZ3/aScvZh1QAXJPaT1uPP4QC4P133dOsE4rvqWCoTIulsHqcw4g2RAFwJUTTr/h43zcAMfRGTfLsRiiQVa6HFzVUfA5XfFxv7G0fvuzddLkwatAGKXzqNjftsizl0Abq3uOaAmHQW8ObhLzkeVyinkdNv7+pGcRbqsB8E5u2ZlaagrNnNzEFGmsrxGsrfl0ftei58puD3fJBm8va60G3nua6uFczvpYuM5sGfMX6R9JiKC142lczsQv7WddUkoJHvemIc1As+IIBc8vFSoszS921ogyIA88KnBo8woDIdcEo8FWBM4MvGLFkYdMEN1/NZAXOBXyZAVzzMLh01UnUqxlaQbmA+zIWNn2wQtyrmSzKFdzXnAGcRjvr+CeEb3KizKkkRAOmAAAAAElFTkSuQmCC">
+                </div>
+                <div class="details">
+                    <p class="font-bold">Discount</p>
+                    <p class="text-[12px] text-cool-500">Every week new sales</p>
+                </div>
+            </div>
+
+            <div class="feature-box-2 flex justify-center items-center">
+
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAnCAYAAAC/mE48AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUySURBVHgB3VpbVttIEK1qeYb5dFYw4hHgzBezAwH5j1nBwAoCK7BZAZMVwA5ivgeMsoLxJw8DmhWMP0OCunOrrXaEEUjCD3RyzzFWS3KrutRVtx6w7wf1OaW2DVGdKgTDFF1dd45oyuCVxc1P+G5QNRFeXJ+u0xRRo8Hi+0xmjyoE7MgDvJ81mjJqyXf/fAbbrQxWFjabxOTTlFGjimN5YaOVd0+suXsdnbbpBai8Api5mXdPzRNFvete3pz8SSVRfQWQ2cm7xxhqMtPaysLG7sVN528qgakqYMkPAvaUPw6dFfFNq0vvImPMGbbLewyrowDPU6BYroNq33Mc751HYUQlUcQHaK2xdurjWcH8/Mbvt7ed/6ggpqoAQ7zDxhxAuobxvMby4uaRiuP9Mooo4gPS+IVJTKZV9H5FU8Tl9WkbNjlv7diYiIm2oYgzsdWic8hvsz7Ew7ilnx5DYX9RCUgkiJiDIkRc81k3iB0rpQIaE4rZx4PSwkUY74mSsu5HHHArcQDk4qfmhOxn+AqY4/XzXhiOjqkAck3A2TGNCfP4lM822qMX8fdgUnOMVx7E2pNoNnw0LoBcBTCrLTLapzEBqoIS+cOP6A4mwSqX4p7DndZHc55qqsG2302PkeS1oijs582Rq4Dz3klIYwKeHDzNYvdQgukTq/2L3mkpusqCLBDbvovDYHUpCBIzsOPfaiR5RJg3x9TjAE95h6mY/uNdrPFmOrlvxqEADdq5tK4d4N5jNzbGa2IXdPN2wXTjgB+LDxEH7LwkDihKg8xmbSR7DOY873/siLYmc/wt1u0sZUxVAazY2vg4ZlQkFH7il4Ehg8iQGwofKOMwSxm5NPhaKEKDRYDgCwqgRqKMIZth0UdfEZ1WPhkaF0mcYak2rQwm3p5Ttf5Pr4A0nDJW/cA3nvoXO2x7qqFwVWGdsWHxAXW3A+pvFze2qVIwEjjRJOTyYh1h0aEc//E2WPum1Zqbf6gAeMpDqiAmIRcSMHnbb+T4PvYOFdOQLodFURQUPlKFgPz+g3htyLVPYwLJXOiOjRfvUKwabv6fngbz5i/NAq7MJccGttWLiqWds0JZ+QorICOul1xZcnJkdQhze6+riEHdwjvglH07+RD97afrkpYG7TpMVIgGUXJueqjkuLhe7DKxzRAfH4nHGYKMUpWYSUKeLfIli38knzhSV4USRWlV+zT4JR87H9DXz7TGnCdGYrI+GtevLGFiwwd5c5SFGrTG6rpALgD55Pl1yRtGq8iroNGkzSZhcIhPkFwK7+J4i10ZKe8hWP3eRe/E5vDCzTrmvuvGYIe0kI2VKl5OGnj+/nmv05LjZT9oxORRtnwGJkFDk7AeVrSkTXYfzqWj0NYbW4BY2JAqr91Oss0ubzot22JH6kmvQKdDOovjeYnw0vIBbbDIVkq+R2yXSzGjNJmMHUbPz5xOR+nSjd310fOjtJrvBA1F+OuLFpMzYeqqVGCsV03uLVzpmRRMUgEayscDmZJrR8MbB0p5JF+uAozRn+X7V6XstpJ/WHC1eRzbc/CqlgFALV2aMSDHqHy7SR9iT/J9Obea5BMmowKdawLouwW27yZeXqn1q6t/HixSKIgTTTs7pBlimNqKl8eiR5ujNn7xPKG9epZ8hcJMKKEFJTgv38aDPg9+bZuRQXI8ZIlZI0XFT8qXZok0CsfZlk/RhsZM/sMrBh0efrLDMytItSfpQ/oPr7gyfPbLKZ1oiEmgGxuw9OSU6k6ibzBJWJPV2obDIt+X+/tnS+PfAcaDp05bJPdZAAAAAElFTkSuQmCC">
+                </div>
+
+                <div class="details">
+                    <p class="font-bold">Free Delivery</p>
+                    <p class="text-[12px] text-cool-500">100% Free for all orders</p>
+                </div>
+
+            </div>
+
+            <div class="feature-box-3 flex justify-center items-center">
+
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,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">                </div>
+                
+                <div class="details">
+                    <p class="font-bold">Great Support 24/7</p>
+                    <p class="text-[12px] text-cool-500">We care your experiences</p>
+                </div>
+
+            </div>
+
+            <div class="feature-box-4 flex justify-center items-center">
+
+                <div class="image">
+                    <img class="w-[70%] scale-110 hover:scale-90 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,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">
+                </div>
+
+                <div class="details">
+                    <p class="font-bold">Great Support 24/7</p>
+                    <p class="text-[12px] text-cool-500">We care your experiences</p>
+                </div>
+
+            </div>
+
+       </div>
+    </div>
+
+
+        <!-- Company section start -->
+     <div class="pb-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white">
+
+        <ul class="flex flex-wrap items-center justify-center sm:justify-between space-x-1 cursor-pointer">
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,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">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,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" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="./assets/Logo%20(2)-BQWVsWZz.png" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700 cursor-pointer" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABBCAYAAABmd3xuAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAY3SURBVHgB7VpNbFRVFP7Om05bATWoEUWUQgEB0SAbDbpAwQgGE10QiQSMQFCDLIBEUUgkFSWYKIps/E1QjERNJCQascaY6AKjAi6MllYXQkgTFLAt/e8cz7333ZnX6XQ67ZzRkjdf5/X9zLw757vn3PP3hliAmCJAjFEmH1eUyccVZfJxRZl8XFEmH1eUyccVsSZfAQW4qpjkxfIie8itraCubiDF9nx447nhUJEAxl0KJCuGO0RBUCHvJSORmnt7gYOHgM/rgT9PCpMUhgOODEiVVeD5twErlwNTJgPKU0B6zQwh2dUD3vQM6PjP4GQSRCMT1iveCmbE6+sDntsKWrQAmlBZ897s+Z19oGPHgcrKERMH+uvXjiNmj+d3gs+csTPC0NGXCnkjH7d3gPZ/CFRVQQsZ7cux+A7+7HD6ugb0vP0vvwKdXdBFRMPi/Kj+68iMFA8ds5eNOjrAFUlogkH91dzeHh7o6F7H7M06vGYCuKcHmiBDn93e+BWaUgPNZrOO5s2in1Ijwk2GNpxzCyRnkCW16K7w+6ACJc2LgBXikbc/C25pdcJxlk+OeOlCvbUxe/PHJleYPh1YuMB6/9Hl8HxYmzMb2FUnnjkF7u4JUzV2fxSN3oV9LflJkgjCL7+oGkns+BpJDvt4ZEcUzYhj4u+OAD/+BBI/YN9JiGUc+R5oa3dpcEH6E/qVktrufUU0X4tRm+ExooS8ljOnqU8OInh1j5CpAjA0eTtCWxv4qY3AsgfteNr5vVqc7y9a9FhoHD2G4LXXhXhljs9mwfgK4zRkn3pkBcgShzpxg5KXtHy6Gbxjl+T6hrijkM/h2ciREn8xZxaC9Y85C4guK0WUlvyFC8BWcYB//e1itrnGuUye03mscZaYNg3YtiWcK7J+pBSPknVK2hxgQ2LHS0BTkwuDIXIVPBz2AqwupIQ3IRMTru7nOagEhl8CzbvQhvcPAN98ayuygl2qiedPbwbdMMlFjZKs9AzUyRtnRSbMvfUuqLpa1q+c01Ds5X2Twa1ZBdx7t1sCpgOUKoWxZ6Bj9ka1fl3+1gDeVudaUMag/brNdVv4DnV2g5cuAZYvA344Cnz8KXDylHMFk64DLV0MvuN2kBROTOz7PCgWOkmOd0dS2WHNeqC52dbfyNPQ8Imu1W7tVGC3RIQPDiDYtx8sFkOUSGeFJI6T1z4KrHoYqC4gXBYIHbP307f3TeDUaWvqQ8lmheewS1O3DThcD3pPmiFjxsmbibB4CdwwY8eCZBnhiy+hCaUMT3R/9jxo8QMi6Jg8nwqNwX+j6c7s3gnMulGyuJWS0bUPOmn2lkB0degjkEyGBpQ0LxKfaAR6+4b6YKa6M6a88UnQvLly7+/AufN5pbG+4ew5UGMToFTTK9Xz8k9a1pzIn7aSa0uIb+gCr3jIOjJL658WkHRoh+RkwmZLm1quqxTqROqJ1wL5Ojne+RkHN/dmYN2aTPJzxXhwQOnkt9+40UMpk/nyy6AFJfJkW0y4c75NVFwVH1JxOa1PfWzHBy9sB11Snbl78vXAlVfZrJB9FU8Z6q4fYMLeRAQ3zYQWdDo5cI+kaNMGsMRsxzt8UuOZUGDzdtqyWYiO73c/yyMp3vC43JIKx3P3ka8IrNZl3HWrZWkl1fpYapq3mFojae3b8nxNwlVnp21oUq+YalenzdXxxh5g5owBS9asCLpnIeiJtZLpScJjntDY0lau9/VaH4HVq0D3L3FeQ2nNk/5vb2U4cUosj6zQ+IdMr0g6oxZ06zyJ4dX57pKJEqfXcEJi/ldAQ6OzhNoa4D4hfctsjNpOjofP9vzT2uymzmD3uEZlKFS652eOg8IGGQHUCxtDmvzDBi7MRNNzlK5fzToPrHic/oQ+SmD2Fw/Kv8z4L1CogRXzaHu4UCXPzGmS/jh6bpBKDfylhieca+83gyDQNdSiyEeJGVLRvd/Mud/6JH7746glGHKGmN8SiUT6ODoB/jx6vRgU7fD6bEEykLS57t/vkWTH7Hul+DFbdCIMAUO2QvJ8szdbMplMXxuMuMYEFE0+as5R8tnaz3U9LUSWaWcTzt68+f/vmh8M2Ws9m/CgAmWt9+g1bZTjfFxRJh9XlMnHFWXycUWZfFzxL34n1MFE4vCqAAAAAElFTkSuQmCC" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700" src="data:image/png;base64,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" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700" src="data:image/png;base64,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" alt="">
+            </li>
+            <li> <img class="w-[70%] grayscale hover:grayscale-0 scale-90 hover:scale-125 ease-in-out duration-700" src="data:image/png;base64,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" alt="">
+            </li>
+        </ul>
+
+     </div>
+
+
+        <!-- Featured product section start -->
+     <div class="pb-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white" id="featured">
+        
+        <div class="heading flex justify-between items-center mb-7">
+                <div>
+                    <h2 class="text-dark-hot text-3xl font-bold">Featured Products</h2>
+                </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+      
+      <div class="grid grid-cols-2 justify-between items-center sm:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-2 gap-y-3 md:gap-y-4 ">
+        
+        <!--       product 1 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>New</p>
+          </div>
+          
+          <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image-nTpsn6WD.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    <!--       product 2 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>Sales</p>
+          </div>
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(1)-Ca2Q3-7P.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 3 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(2)-BngBg56E.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 4 -->
+        <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(3)-DtPcR1mr.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+       </div>
+     </div>
+      
+
+        <!-- Top categories section start -->
+     <div class="py-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white" id="top">
+    
+        <div class="heading flex justify-between items-center mb-7">
+            <div>
+                <h2 class="text-dark-hot text-3xl font-bold">Top Categories</h2>
+            </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+        
+        <div class="grid grid-cols-1 items-centers md:grid-cols-3 gap-3 md:gap-4">
+        
+    <!--       product 1 -->
+        <div class="products-box hover:shadow-xl rounded overflow-hidden">
+            <div class="relative cursor-pointer">
+                <div>
+                    <img src="./assets/Image%20(4)-BW3bs3Dr.png" class="hover:scale-110" alt="Wing Chair">
+                </div>
+                
+                <div class="info-box absolute bottom-0 bg-black bg-opacity-50 w-full py-2 px-4 ">
+                <h2 class="text-lg text-white font-bold">Wing Chair</h2>
+                <p class="font-normal text-sm text-gray-200">3,584 Products</p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    <!--       product 2 -->
+        <div class="products-box hover:shadow-xl rounded overflow-hidden">
+            <div class="relative cursor-pointer">
+                <div>
+                    <img src="./assets/Image%20(5)-C7rMizHQ.png" class="hover:scale-110" alt="Wooden Chair">
+                </div>
+                
+                <div class="info-box absolute bottom-0 bg-black bg-opacity-50 w-full py-2 px-4 ">
+                <h2 class="text-lg text-white font-bold">Wooden Chair</h2>
+                <p class="font-normal text-sm text-gray-200">157 Products</p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+    <!--      product 3 -->
+        <div class="products-box hover:shadow-xl rounded overflow-hidden">
+            <div class="relative cursor-pointer">
+                <div>
+                    <img src="./assets/Image%20(6)-Ow2Ce5hO.png" class="hover:scale-110" alt="">
+                </div>
+                
+                <div class="info-box absolute bottom-0 bg-black bg-opacity-50 w-full py-2 px-4 ">
+                    <h2 class="text-lg text-white font-bold">Desk Chair</h2>
+                    <p class="font-normal text-sm text-gray-200">210 Products</p>
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+        </div>
+    
+     </div>
+
+
+        <!-- Our Products section start  -->
+    <div class="py-8 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white" id="shop">
+      
+        <div class="heading flex flex-col justify-center items-center mb-7">
+            <h2 class="text-dark-hot text-3xl font-bold mb-2">Our Products</h2>
+            
+            <ul class="flex justify-center flex-wrap items-center space-y-3 space-x-2 uppercase">
+                <li class="text-dark-hot underline font-medium"><a href="#">All</a></li>
+                <li class="text-gray-400 hover:text-dark-hot hover:font-medium hover:underline"><a href="#">Newest</a></li>
+                <li class="text-dark-hot font-medium hover:text-dark-hot hover:font-medium hover:underline"><a href="#top">Trending</a></li>
+                <li class="text-gray-400 hover:text-dark-hot hover:font-medium hover:underline"><a href="#top">Best Sellers</a></li>
+                <li class="text-gray-400 hover:text-dark-hot hover:font-medium hover:underline"><a href="#featured">Featured</a></li>
+            </ul>
+        </div>
+
+        <div class="grid grid-cols-2 justify-between items-center sm:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-2 gap-y-3 md:gap-y-4">
+        
+            <!--       product 1 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative">
+              
+              <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+                <p>New</p>
+              </div>
+              
+              <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image-nTpsn6WD.png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20</p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+        <!--       product 2 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+              
+              <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+                <p>Sales</p>
+              </div>
+              
+              <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image%20(1)-Ca2Q3-7P.png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+            <!--       product 3 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+              
+              <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image%20(2)-BngBg56E.png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20</p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+            
+            
+            <!--       product 4 -->
+            <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+              
+              <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+                <i class="fa-solid fa-heart p-[6px]"></i>
+              </div>
+              
+              
+              <div class="image flex justify-center items-center overflow-hidden">
+                <img class="rounded hover:scale-110" src="./assets/Image%20(3)-DtPcR1mr.png">
+              </div>
+              
+              <div class="info-box flex justify-between items-center">
+                  <div class="py-2">
+                    <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                    <p class="text-md font-bold text-dark-hot">$20</p>
+                  </div>
+                  <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+              
+            </div>
+
+
+         <!--       product 5 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative">
+              
+            <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+              <p>New</p>
+            </div>
+            
+            <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image%20(4)-BW3bs3Dr.png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20</p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+      <!--       product 6 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+            
+            <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+              <p>Sales</p>
+            </div>
+            
+            <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image%20(7)-B2xbq4Aq.png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+          <!--       product 7 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+            
+            <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image%20(8)-DOAsPwEg.png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20</p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+          
+          <!--       product 8 -->
+          <div class="featured-box hover:shadow-lg p-2 border border-1 relative group">
+            
+            <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+              <i class="fa-solid fa-heart p-[6px]"></i>
+            </div>
+            
+            
+            <div class="image flex justify-center items-center overflow-hidden">
+              <img class="rounded hover:scale-110" src="./assets/Image-nTpsn6WD.png">
+            </div>
+            
+            <div class="info-box flex justify-between items-center">
+                <div class="py-2">
+                  <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                  <p class="text-md font-bold text-dark-hot">$20</p>
+                </div>
+                <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                  <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </div>
+            
+          </div>
+          
+         </div>
+
+    </div>
+
+
+        <!-- Client review section start -->
+    <div class="p-12 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-cool-300" id="review">
+    
+        <div class="heading flex justify-between items-center mb-7">
+            <div>
+                <h2 class="text-dark-hot text-3xl font-bold">What client says about us</h2>
+            </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+        
+        <div class="grid grid-cols-1 items-centers lg:grid-cols-2 gap-3 md:gap-4">
+        
+            <div class="review-box p-6 bg-white rounded-lg">
+                <p class="text-cool-500 font-normal border-l-2 border-hot pl-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
+
+                <div class="clients-info mt-6 ">
+                    <div class="flex justify-start items-center gap-2 relative">
+                            <img src="./assets/Image%20(10)-ByOYai4G.png" class="w-12">
+                        <div>
+                            <p class="font-bold text-md">Kristin Watson</p>
+                            <p class="font-normal text-sm text-cool-500">Fashion Designer</p>
+                        </div>
+                        <img src="data:image/png;base64,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" class="w-32 absolute right-[-5%] bottom-[-50%]">
+                    </div>
+                </div>
+            </div>
+            <div class="review-box p-6 bg-white rounded-lg">
+                <p class="text-cool-500 font-normal border-l-2 border-hot pl-4">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et”</p>
+
+                    <div class="clients-info mt-6 ">
+                        <div class="flex justify-start items-center gap-2 relative">
+                                <img src="./assets/Image%20(11)-wE395svW.png" class="w-12">
+                            <div>
+                                <p class="font-bold text-md">Esther Howard</p>
+                            <p class="font-normal text-sm text-cool-500">Fashion Designer</p>
+                            </div>
+                            <img src="data:image/png;base64,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" class="w-32 absolute right-[-5%] bottom-[-50%]">
+                        </div>
+                    </div>
+            </div>
+        
+        </div>
+    
+    </div>
+
+
+        <!-- Recently Added section start -->
+     <div class="p-12 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white sm:pb-20 border-b-2 border-solid border-gray-300" id="latest">
+        
+        <div class="heading flex justify-between items-center mb-7">
+                <div>
+                    <h2 class="text-dark-hot text-3xl font-bold">Recently Added</h2>
+                </div>
+                <ul class="flex justify-center items-center gap-2">
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-left"></i></li>
+                    <li class="flex justify-center items-center list-none w-7 h-7 text-sm bg-cool hover:bg-hot hover:text-white text-dark-hot rounded-full">
+                        <i class="fa-solid fa-arrow-right"></i></li>
+                </ul>
+        </div>
+      
+      <div class="grid grid-cols-2 justify-between items-center sm:grid-cols-3 lg:grid-cols-4 gap-x-3 md:gap-x-2 gap-y-3 md:gap-y-4 ">
+        
+        <!--       product 1 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-new z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>New</p>
+          </div>
+          
+          <div class="absolute text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(3)-DtPcR1mr.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-white bg-hot hover:bg-dark-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+    <!--       product 2 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute text-[10px] text-white py-[1px] px-[4px] bg-[#F5813F] z-10 top-[8%] left-[10%] rounded cursor-pointer">
+            <p>Sales</p>
+          </div>
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(7)-B2xbq4Aq.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20 <span class="ml-1 font-normal text-xs text-[#9A9CAA] line-through">$29</span></p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 3 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(1)-Ca2Q3-7P.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+        
+        <!--       product 4 -->
+        <div class="latest-box hover:shadow-lg p-2 border border-1 relative group">
+          
+          <div class="absolute invisible group-hover:visible text-lg text-dark-hot hover:text-hot bg-white z-10 top-[8%] right-[10%] rounded-md cursor-pointer">
+            <i class="fa-solid fa-heart p-[6px]"></i>
+          </div>
+          
+          
+          <div class="image flex justify-center items-center overflow-hidden">
+            <img class="rounded hover:scale-110" src="./assets/Image%20(6)-Ow2Ce5hO.png">
+          </div>
+          
+          <div class="info-box flex justify-between items-center">
+              <div class="py-2">
+                <p class="text-xs text-dark-hot hover:text-hot">Library Store Chair</p>
+                <p class="text-md font-bold text-dark-hot">$20</p>
+              </div>
+              <div class="text-xs w-6 h-6 flex justify-center items-center rounded text-dark-hot hover:text-white hover:bg-hot cursor-pointer">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          
+        </div>
+        
+       </div>
+     </div>
+
+
+        <!-- Footer section start -->
+    <footer class="pb-2 pt-8 sm:p-12 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white border-b-2 border-solid border-gray-300 " id="about">
+
+      <div class="flex-row sm:flex items-center sm:items-start text-center md:text-left space-x-4 space-y-4 sm:space-y-0">
+        
+        <div class="footer-box-1 flex flex-col items-center md:items-start ">
+            <div class="flex items-center mb-2">
+              <p class="text-dark-hot font-bold text-2xl cursor-pointer">
+              <i class="fa-solid fa-couch text-hot"></i>
+              <span>Comforty</span></p>
+            </div>
+          
+            <p class="text-lg sm:text-sm text-dark-hot text-center sm:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Harum atque earum quos in.</p>
+          
+            <div class="socials my-2">
+              <div class="flex space-x-1 text-lg text-cool-500 leading-7 text-center">
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out">
+                  <i class="fa-brands fa-facebook"></i></a>
+
+                <a href="#" class="w-8 h-8 rounded-full text-center text-cool-500 leading-7 border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-twitter"></i></a>
+
+                <a href="#" class="w-8 h-8 rounded-full border-2 border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-pinterest"></i></a>
+
+                <a href="#" class="w-8 h-8 border-2 rounded-full border-transparent hover:border-solid hover:border-2 hover:border-hot hover:text-hot transition duration-300 ease-in-out"><i class="fa-brands fa-youtube"></i></a>
+              </us=>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="footer-box-2">
+          <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Category</h2>
+          <ul class="text-dark-hot text-sm space-y-1">
+            <li><a href="#" class="hover:text-hot">Sofa</a></li>
+            <li><a href="#" class="hover:text-hot">Armchair</a></li>
+            <li><a href="#" class="hover:text-hot">Wing Chair</a></li>
+            <li><a href="#" class="hover:text-hot">Desk Chair</a></li>
+            <li><a href="#" class="hover:text-hot">wooden Chair</a></li>
+            <li><a href="#" class="hover:text-hot">Park Bench</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box-3">
+          <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Support</h2>
+          <ul class="text-dark-hot text-sm leading-6">
+            <li><a href="#" class="hover:text-hot" href="#">Help & Support</a></li>
+            <li><a href="#" class="hover:text-hot" href="#">Tearms & Conditions</a></li>
+            <li><a href="#" class="hover:text-hot" href="#">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-hot" href="#">Help</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-box-4">
+              <h2 class="uppercase text-gray-400 text-xl mb-2 hover:text-dark-hot">Newsletter</h2>
+
+          <div class="text-dark-hot text-sm">
+
+            <div class="subscribe my-2 flex flex-col md:flex-row items-center">
+              <input type="email" placeholder="Your email"
+                  class="p-2 w-full md:w-auto mb-2 md:mb-0 md:mr-1 border-2 border-cool text-hot rounded-md transition duration-300 outline-none focus:ring-1 focus:ring-hot"/>
+
+              <input type="submit" value="Subscribe"
+                  class="p-[9px] w-full md:w-auto rounded-md font-bold text-sm capitalize bg-hot text-white hover:bg-dark-hot focus:ring focus:ring-hot transition duration-300"/>
+          </div>
+
+            <div class="info my-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Nullam tincidunt erat enim.</p>
+            </div>
+
+          </div> 
+        </div>
+        
+      </div>
+
+      
+    </footer>
+
+    <!-- copyright text  -->
+    <div class="py-4 px-3 sm:px-16 md:px-32 max-w-screen-xl mx-auto bg-white ">
+      <div class="flex flex-col sm:flex-row sm:justify-between items-center">
+          <div>
+            <p class="text-gray-400 text-sm">@ 2024 - Comforty - Designed & Develop by <span class="text-dark-hot">MamunExpert</span></p>
+          </div>
+          <div>
+            <a href="#">
+              <img class="inline-block w-40" src="./assets/pay-method-DYVABEYx.jpg" alt="">
+            </a>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
