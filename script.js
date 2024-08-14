@@ -3,7 +3,7 @@
 
 const comfortyHome = document.getElementById('comfortyLink');
 
-        const jumpLink = 'index.html'; 
+        const jumpLink = './index.html'; 
 
         comfortyHome.addEventListener('click', () => {
             window.location.href = jumpLink;
@@ -15,7 +15,7 @@ const comfortyHome = document.getElementById('comfortyLink');
 
 const comfortyReg = document.getElementById('signinLink');
 
-    const formLink = 'signin.html';
+    const formLink = '/signin.html';
 
     comfortyReg.addEventListener('click', () => {
             window.location.href = formLink;
